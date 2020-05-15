@@ -8,19 +8,18 @@ public class Homework1 {
     System.out.println("Fib: " + fib(10));
   }
 
-  public static int fib(int numFib) {
+  public static int fib(int fibIndex) {
 
     int first = 0;
     int second = 1;
     int next;
 
 
-    if (numFib < 0) {
+    if (fibIndex < 0) {
       System.out.println("Please insert valid value >= 0");
-    }
-    else {
+    } else {
 
-      for (int n = 0; n < numFib; n++) {
+      for (int n = 0; n < fibIndex; n++) {
         next = second + first;
         second = first;
         first = next;
@@ -34,9 +33,6 @@ public class Homework1 {
   }
 }
 
-
-
-//Ввод функции для ряда фибоначи
 
 //        0 = 0
 //        1 = 1
