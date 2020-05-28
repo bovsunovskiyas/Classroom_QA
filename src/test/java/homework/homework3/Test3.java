@@ -9,9 +9,6 @@ import java.time.Month;
 
 
 //    3. Write an example that tests whether a given date occurs on Friday the 13th.
-//    3. Напишите пример, который проверяет, происходит ли данная дата в пятницу 13-го числа.
-
-
 public class Test3 {
 
   public static void main(String[] args) throws IOException, ParseException {
@@ -20,7 +17,6 @@ public class Test3 {
 
     //Enter numbers for date
     test3.calculateFridayOf13th(13, Month.MARCH, 2020);
-
 
   }
     private void calculateFridayOf13th(int date, Month month, int year){
@@ -32,7 +28,6 @@ public class Test3 {
       int numberOfMonth = enteredDate.getDayOfMonth();
       DayOfWeek nameOfDay = enteredDate.getDayOfWeek();
       DayOfWeek friday = DayOfWeek.FRIDAY;
-
 
 //      System.out.println(nameOfDay);
 //      System.out.println(numberOfDay);
