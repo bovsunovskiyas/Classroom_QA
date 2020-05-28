@@ -17,9 +17,8 @@ public class Test1 {
     int intYear = Integer.parseInt(year);
     //System.out.println("entered year: " + intYear);
 
-
-Test1 test1 = new Test1();
-test1.lengthOfMonth(intYear);
+  Test1 test1 = new Test1();
+  test1.lengthOfMonth(intYear);
 
   }
 
