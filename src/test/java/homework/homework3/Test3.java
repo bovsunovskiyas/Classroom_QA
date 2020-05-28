@@ -11,13 +11,12 @@ import java.time.Month;
 //    3. Write an example that tests whether a given date occurs on Friday the 13th.
 public class Test3 {
 
-  public static void main(String[] args) throws IOException, ParseException {
+  public static void main(String[] args) {
 
     Test3 test3 = new Test3();
 
     //Enter numbers for date
     test3.calculateFridayOf13th(13, Month.MARCH, 2020);
-
   }
     private void calculateFridayOf13th(int date, Month month, int year){
 
@@ -39,7 +38,6 @@ public class Test3 {
       else{
         System.out.println("It's not a FRIDAY of the 13th, it's - " + nameOfDay + " " + numberOfMonth + "th.");
         //System.out.printf("It's not a FRIDAY of the 13th, {0} it's - {1} th.", nameOfDay, numberOfMonth);
-
       }
 
 
