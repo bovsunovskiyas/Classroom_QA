@@ -4,24 +4,49 @@ public class Homework2 {
 
   public static void main(String[] args) {
 
-    // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987
-    //System.out.println("Fib: " + fib(10));
+  // Enter some int vales to array
+    int[] array = new int[]{144, 21, 377, 8, 13, 34, 55, 89, 233, 610, 987};
 
 
+    System.out.println("Before 'Bubble sorting': ");
 
+    for (int elements : array) {
+      System.out.print(elements + " ");
+    }
 
-    int [] array = new int[] {144, 21, 377, 8, 13,  34, 55, 89,  233,  610, 987};
-for (int element: array){
-  while (true){
+    Homework2 hw2 = new Homework2();
+    hw2.bubbleSorting(array);
+
+    System.out.println(" ");
+    System.out.println("------------------------");
+
+    System.out.println("After 'Bubble sorting': ");
+
+    for (int elements : array) {
+      System.out.print(elements + " ");
+    }
+    System.out.println(" ");
 
   }
 
-}
 
+  public void bubbleSorting(int[] array) {
+    boolean sorted = false;
+    int temp;
+    while (!sorted) {
+      sorted = true;
+      for (int i = 0; i < array.length - 1; i++) {
+        if (array[i] > array[i + 1]) {
+          temp = array[i];
+          array[i] = array[i + 1];
+          array[i + 1] = temp;
+          sorted = false;
+        }
+      }
+    }
   }
 
-
-//процедура бульбашка( A : список елементів придатних для сортування )
+  //процедура бульбашка( A : список елементів придатних для сортування )
 //  повторювати
 //          переставлені = хиба
 //  для i = 1 включно до довжина(A) - 1 робити:
@@ -35,27 +60,5 @@ for (int element: array){
 //  доки не переставлені
 //  кінець процедури
 
-  public static int fib(int fibIndex) {
 
-    int first = 0;
-    int second = 1;
-    int next;
-
-
-    if (fibIndex < 0) {
-      System.out.println("Please insert valid value >= 0");
-    } else {
-
-      for (int n = 0; n < fibIndex; n++) {
-        next = second + first;
-        second = first;
-        first = next;
-
-        //System.out.println(F1);
-      }
-
-    }
-    return first;
-
-  }
 }
