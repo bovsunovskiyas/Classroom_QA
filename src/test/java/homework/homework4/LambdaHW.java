@@ -25,7 +25,6 @@ public class LambdaHW {
     lambdaHW.sortByAlphabet();
     lambdaHW.printingArray();
 
-
     //Not implemented tasks from homework
     System.out.println("4) Sorted by Strings that contain “e” first, everything else second");
     System.out.println("Not implemented tasks from homework");
