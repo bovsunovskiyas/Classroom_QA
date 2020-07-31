@@ -1,4 +1,4 @@
-package homework.homework4.lambdaExamples;
+package homework.homework4;
 
 import java.util.Arrays;
 
@@ -74,8 +74,8 @@ public class LambdaHW {
 
 
   public void printingArray() {
-    for (int i = 0; i < myArray.length; i++) {
-      System.out.println(myArray[i]);
+    for (String s : myArray) {
+      System.out.println(s);
 
     }
     System.out.println();
