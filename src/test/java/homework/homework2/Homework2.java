@@ -14,44 +14,44 @@ public class Homework2 {
       System.out.print(elements + " ");
     }
 
-    Homework2 hw2 = new Homework2();
-    hw2.bubbleSorting(array);
+        Homework2 hw2 = new Homework2();
+        hw2.bubbleSorting(array);
 
-    System.out.println(" ");
-    System.out.println("------------------------");
+        System.out.println(" ");
+        System.out.println("------------------------");
 
-    System.out.println("After 'Bubble sorting': ");
+        System.out.println("After 'Bubble sorting': ");
 
-    for (int elements : array) {
-      System.out.print(elements + " ");
-    }
-    System.out.println(" ");
+        for (int elements : array) {
+          System.out.print(elements + " ");
+        }
+        System.out.println(" ");
 
-  }
+      }
 
 
-  public void bubbleSorting(int[] array) {
-    boolean sorted = false;
-    int temp;
-    while (!sorted) {
-      sorted = true;
-      for (int i = 0; i < array.length - 1; i++) {
-        if (array[i] > array[i + 1]) {
-          temp = array[i];
-          array[i] = array[i + 1];
-          array[i + 1] = temp;
-          sorted = false;
+      public void bubbleSorting(int[] array) {
+        boolean sorted = false;
+        int temp;
+        while (!sorted) {
+          sorted = true;
+          for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] > array[i + 1]) {
+              temp = array[i];
+              array[i] = array[i + 1];
+              array[i + 1] = temp;
+              sorted = false;
+            }
+          }
         }
       }
-    }
-  }
 
-  //процедура бульбашка( A : список елементів придатних для сортування )
-//  повторювати
-//          переставлені = хиба
-//  для i = 1 включно до довжина(A) - 1 робити:
-//  /* якщо ця двійка невпорядкована */
-//  якщо A[i-1] > A[i] тоді
+      //процедура бульбашка( A : список елементів придатних для сортування )
+    //  повторювати
+    //          переставлені = хиба
+    //  для i = 1 включно до довжина(A) - 1 робити:
+    //  /* якщо ця двійка невпорядкована */
+    //  якщо A[i-1] > A[i] тоді
 //    /* поміняти місцями і запам'ятати, що щось змінилось */
 //  переставити( A[i-1], A[i] )
 //  переставлені = істина
