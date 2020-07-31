@@ -32,6 +32,7 @@ public class LambdaHW {
 //    lambdaHW.sortWithSymbolE();
 //    lambdaHW.printingArray();
 
+
     System.out.println("5) Sorted  Redo the previous problem, but use a static helper method");
     System.out.println("Not implemented tasks from homework");
 //   lambdaHW.sortWithSymbolE_2();
