@@ -69,7 +69,7 @@ public class HW1 {
 
   @After
   public void closeDriver () {
-    System.out.println("Closing the test");
+    //System.out.println("Closing the test");
     //driver.close();
   }
 

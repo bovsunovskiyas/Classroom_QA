@@ -56,9 +56,11 @@ public class LambdaHW {
     Arrays.sort(myArray, (a, b)->Integer.compare(a.charAt(0), b.charAt(0)));
   }
 
+  // Strings that contain “e” first, everything else second. For now, put the code directly in the lambda.
+  //(Hint: remember that the body of a lambda is allowed to have curly braces and a return statement. See the first two lambda examples in the notes.)
   public void sortWithSymbolE() {
     //sortByLength
-    //Arrays.sort(myArray, (c, d) -> Integer.compare(c.charAt(0), d.charAt(0)));
+    Arrays.sort(myArray, (c, d) -> Integer.compare(c.charAt(0), d.charAt(0)));
 
     //, Integer.valueOf("e")
   }
